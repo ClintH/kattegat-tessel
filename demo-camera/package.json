@@ -1,0 +1,9 @@
+{
+	"name": "camera",
+	"version": "0.0.1",
+	"description": "Camera demo",
+	"main": "app.js",
+	"dependencies": {
+		"camera-vc0706": "latest"
+	}
+}

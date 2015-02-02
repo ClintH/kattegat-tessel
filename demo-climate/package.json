@@ -1,0 +1,9 @@
+{
+	"name": "climate",
+	"version": "0.0.1",
+	"description": "Climate demo",
+	"main": "app.js",
+	"dependencies": {
+		"climate-si7020": "latest"
+	}
+}

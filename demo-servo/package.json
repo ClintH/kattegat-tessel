@@ -1,0 +1,9 @@
+{
+	"name": "climate",
+	"version": "0.0.1",
+	"description": "Servo demo",
+	"main": "app.js",
+	"dependencies": {
+		"servo-pca9685": "latest"
+	}
+}

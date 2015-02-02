@@ -1,0 +1,1 @@
+These sketches should be put in the `public` directory of where you generated your Kattegat project. That is, they should be in the same place you find the `dia-samples` and `demos` directories.
