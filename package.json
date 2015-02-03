@@ -1,6 +1,6 @@
 {
   "name": "kattegat-tessel",
-  "description": "Helper code and demos for interacting with Tessel"
+  "description": "Helper code and demos for interacting with Tessel",
   "version": "0.0.1",
   "main": "app.js",
   "scripts": {
