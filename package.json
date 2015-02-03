@@ -1,11 +1,18 @@
 {
   "name": "kattegat-tessel",
+  "description": "Helper code and demos for interacting with Tessel"
   "version": "0.0.1",
-  "private": true,
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ClintH/kattegat-tessel.git"
+  },
+  "keywords": [
+    "tessel"
+  ],
   "dependencies": {
     "async": "^0.9.0",
     "lodash": "2.4.1",
@@ -18,5 +25,11 @@
   },
   "engines": {
     "node": ">=0.8.0"
-  }
+  },
+  "author": "Clint Heyer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ClintH/kattegat-tessel/issues"
+  },
+  "homepage": "https://github.com/ClintH/kattegat-tessel"
 }
