@@ -1,0 +1,11 @@
+{
+	"name": "demo-rfid",
+	"private": true,
+	"version": "0.0.1",
+	"description": "Rfid demo",
+	"main": "app.js",
+	"dependencies": {
+		"rfid-pn532": "latest",
+		"tessel": "latest"
+	}
+}

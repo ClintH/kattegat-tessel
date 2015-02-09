@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html><head>
+	<title>rfid</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, target-densitydpi=device-dpi">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel='stylesheet' href='/bower_components/pure/pure-min.css'>
+	<link rel='stylesheet' href='/base.css'>
+	<link rel='stylesheet' href='style.css'>
+
+</head>
+<body kattegat-livereload="true">
+	<h1>rfid</h1>
+	<p>
+		This demo requires that you have a Tessel with <code>kattegat-tessel/demo-rfid/app.js</code> loaded up.</p>
+	<p>
+		Last scanned card: <span id="lastId">...</span>
+		</p>
+	<p id="specialResult"></p>
+	<script src="/bower_components/libraries.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="script.js"></script>
+</body></html>

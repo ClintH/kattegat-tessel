@@ -46,11 +46,12 @@ node app.js demos-basic/heartbeat.js
 
 # Demos
 
-There are some demo sketches included.
+There are some demos included. Some of which also have an accompanying "sketch" folder which should be placed in your Kattegat "public" folder.
+
+Please check out the README.md included in each demo directory.
 
 Use Kattegat's realtime demo page (/demos/realtime.html) as a simple way of testing that it's working. Load the demo, scroll down to the "Rooms" section, put in "tessel" as the room, click "Join", and then send messages to the Tessel by typing in the "Message" box and hitting "Send to room". Make sure you view the console to see the responses - nothing will appear in the web page itself.
 
-Please check out the README.md included in each demo directory
 
 Overview of demos:
 * demos-basic/heartbeat: Sends a timestamp every second (useful as a first test)
