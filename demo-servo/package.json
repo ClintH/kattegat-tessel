@@ -1,6 +1,7 @@
 {
-	"name": "climate",
-	"version": "0.0.1",
+	"name": "demo-servo",
+	"version": "0.0.2",
+	"private": true,
 	"description": "Servo demo",
 	"main": "app.js",
 	"dependencies": {

@@ -44,6 +44,8 @@ Eg:
 node app.js demos-basic/heartbeat.js
 ```
 
+Hit CTRL+C to exit the sketch.
+
 # Demos
 
 There are some demos included. Some of which also have an accompanying "sketch" folder which should be placed in your Kattegat "public" folder.
@@ -64,6 +66,12 @@ Overview of demos:
 * demo-camera/webcam: Broadcasts images to Kattegat, includes a sketch to render in the browser 
 
 Most of these demos built from the samples provided by Tessel.
+
+# Read more
+
+* [Modules for the Tessel](https://tessel.io/modules)
+* [Tessel documentation](https://tessel.io/docs/home)
+* [Tessel forums](https://forums.tessel.io/)
 
 # Communication with Kattegat via USB
 

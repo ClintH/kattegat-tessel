@@ -16,8 +16,8 @@ servo.on('ready', function() {
   
   // Configure servo (see README for what these numbers are about)
   servo.configure(servo1, 0.05, 0.12, function() {
-    console.log("Servo " + servo1 + " configured.");
-    
+    console.log("Servo will rotate back and forth, press the Tessel button to change speed.")
+
     // Move to initial position
     servo.move(servo1, position);
 
@@ -63,7 +63,7 @@ function run() {
   if (newPos < 0.0) newPos = 1.0;
   
   // Print a debug message, move the servo, and keep track of position
-  console.log("Moving to: " + newPos + " vector: " + vector);
+  console.log("   moving to: " + newPos + " vector: " + vector);
   servo.move(servo1, newPos);
   position = newPos;
 }

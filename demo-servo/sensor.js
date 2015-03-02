@@ -1,4 +1,4 @@
-// Controls the servo from a Kattegat sketch
+// Controls the servo from the data-gen Kattegat sketch
 // Check README.md for more info
 
 var tessel = require('tessel'),
@@ -13,15 +13,16 @@ servo.on('ready', function() {
   
   // Configure servo (see README for what these numbers are about)
   servo.configure(servo1, 0.05, 0.12, function() {
-    console.log("Wating for remote control, load 'servo-remote' sketch in your browser");
+    console.log("Wating for remote control, load 'dia-samples/data-gen' sketch in your browser");
+    console.log("Warning: Do not set data-gen's rate high or you will wear your little servo out!");
 
     process.on('message', function(msg) {
       // Received a remote control message!
       if (msg.evt !== "say") return;
       var payload = msg.payload;
-      if (payload.command == "position") {
+      if (payload.value) {
         // Sanity-check position
-        var v = payload.value;
+        var v = payload.value /100.0;
         if (v > 1.0) v = 1.0;
         else if (v < 0.0) v = 0.0;
 

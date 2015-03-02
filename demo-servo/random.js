@@ -14,8 +14,8 @@ servo.on('ready', function() {
   
   // Configure servo (see README for what these numbers are about)
   servo.configure(servo1, 0.05, 0.12, function() {
-    console.log("Servo " + servo1 + " configured.");
-    
+    console.log("Servo will move randomly every " + updateSpeed + "ms.");
+
     // Start interval so 'run' is executed every 'updateSpeed' milliseconds
     setInterval(run, updateSpeed);
   });
@@ -26,7 +26,7 @@ function run() {
   var newPos = Math.random();
 
   // Print a debug message, move the servo, and keep track of position
-  console.log("Moving to: " + newPos);
+  console.log(" new position: " + newPos);
   servo.move(servo1, newPos);
 }
 
