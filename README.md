@@ -17,13 +17,7 @@ If you haven't installed the Tessel tools, do so:
 npm install -g tessel
 ```
 
-Install kattegat-tessel:
-
-```
-npm install kattegat-tessel
-```
-
-You should plug in the Tessel via USB and ensure wait for a bit while drivers get installed.
+You should now connect the Tessel to your computer with the USB cable. You might need to wait a moment or two for your computer to configure itself.
 
 If you have a new board, it's also worth updating to the latest firmware:
 
@@ -31,8 +25,36 @@ If you have a new board, it's also worth updating to the latest firmware:
 tessel update
 ```
 
+Let's presume you want to install kattegat-tessel as part of a new Kattegat project (and assuming you've already [installed Kattegat](https://github.com/ClintH/kattegat/blob/master/INSTALL.md))
+
+First make a new directory for your project, enter it, and generate a project:
+
+```
+mkdir module02
+cd module02
+yo kattegat
+```
+
+Now install kattegat-tessel:
+
+```
+npm install kattegat-tessel
+```
+
+This places the package under `node_modules/kattegat-tessel`, and what we want to do is make a copy so we can edit it. We also want to copy the included Kattegat sketches to the public directory so they can be opened in the browser:
+
+```
+cp -R node_modules/kattegat-tessel/ tessel/
+cp -R tessel/sketches/ public/tessel/
+```
+
+Start Kattegat (`node app`), and open a new command prompt / terminal. This way Kattegat can run while we do stuff with kattegat-tessel. Make sure the new terminal is in the same directory as your Kattegat project. Now, enter the 'tessel' directory (`cd tessel`), and you are ready to run scripts as per the next section.
+
+The included Kattegat sketches can be opened in your browser. For example: http://localhost:3000/tessel/rfid/
 
 # Running
+
+(Make sure you have Kattegat running in another terminal tab)
 
 ```
 node app.js *your script*
@@ -45,6 +67,15 @@ node app.js demos-basic/heartbeat.js
 ```
 
 Hit CTRL+C to exit the sketch.
+
+Some demos require additional packages to be installed, so if you get an error about a missing library, `cd` into the directory, run `npm install`, and then `cd ..` to go back up a level. Eg:
+
+```
+cd demos-servo
+npm install
+cd ..
+```
+
 
 # Demos
 
@@ -106,3 +137,4 @@ Eg:
 # Gotchas
 
 * Sometimes Tessel code will silently fail without giving an exception, particularly for code running in an event handler.
+* Loading the script will sometimes not work, and you'll get the command prompt straight away. Just re-run 'node app ....' and it should work.
