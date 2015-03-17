@@ -1,0 +1,9 @@
+{
+	"name": "pulse",
+	"version": "0.0.1",
+	"description": "Pulse demo",
+	"main": "app.js",
+	"dependencies": {
+		"pulsesensor": "latest"
+	}
+}
